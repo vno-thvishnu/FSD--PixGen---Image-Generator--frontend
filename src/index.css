@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+@media screen and (min-width: 480px) {
+    .card:nth-child(7n + 1) {
+        grid-column: auto/span 2;
+        grid-row: auto/span 2;
+    }
+}
+
+.prompt::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+.prompt::-webkit-scrollbar-thumb {
+  background-color: #666e75;
+  border-radius: 5px;
+}
+video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    /* rotate: 90deg; */
+}
+/* .forbg{
+    background-color: black;
+      background-image: url("https://static.vecteezy.com/system/resources/thumbnails/008/311/935/small/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('./assets/video.mp4');
+    } */
+
+    /* .forbg{
+        background-color: black;
+    } */
+    #error-box {
+        border: 1px solid red !important;
+        background-color: blue;
+      }
+      #success-box {
+        border: 2px solid greenyellow !important;
+      }
+    .Inputpair{
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        justify-content: center;
+        align-items: center;
+        /* background-color: blue; */
+    }
+    .Input{
+        width: 100%;
+        display: flex;
+        font-size: 1vw;
+        border: none;
+        outline: none;
+        padding: 0.5vw;
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+      
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5); 
+    }
+    .InputPassword{
+        width: 85%;
+        font-size: 1vw;
+        border: none;
+        outline: none;
+        /* padding: 0.3vw; */
+        background: transparent;
+    }
+    .InputPasswordSpan{
+        width: 15%;
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        font-size: 1vw;
+        font-weight: 700;
+        justify-content:center;
+        color: rgb(255, 255, 255,0.5);
+    }
+    .err{
+        font-size: 1vw;
+        color: red;
+        font-weight: bolder;
+        /* border: 3px solid greenyellow; */
+        /* background-color: #000000; */
+        /* background- */
+        /* box-shadow:;  */
+        text-shadow: 1px 1px #000000;
+
+    }
+    .InputLink{
+        text-decoration: none;
+        font-size: 1vw;
+    }
+    .InputButton{
+        /* background-color: white; */
+        margin-top: 1vw;
+        border-radius: 0.5vw;
+        font-size: 1vw;
+        color: #ffffff;
+        padding: 0.3vw 2vw;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+      
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5); 
+    }
+ .h3{
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+ }
+ .imglogo{
+    height: 8vh;
+ }
+ .forhead{
+    font-size: 3.5vh;
+ }
+ .forslo{
+    font-size: 1.5vh;
+ }
+ .forgap{
+    gap: 1vw;
+ }
+ .buttonfontsize{
+    font-size: 1.2vw;
+}
+.forlogout{
+    cursor: pointer;
+}
+.forlogout:hover{
+    color: red;
+}
+.pdiv{
+    display: flex;
+    gap: 2vw;
+}
+.fordisplay{
+    font-size: 1vw;
+}
+ @media only screen and (max-width: 768px) {
+.forlogout{
+font-size: 2.5vw;
+}
+    .forhead{
+        font-size: 2.5vh;
+     }
+     .forslo{
+        font-size: 1vh;
+     }
+     .imglogo{
+        height: 6vh;
+     }
+     .h3{
+        font-size: 4vw;
+        margin-bottom: 2vw;
+     }
+.Inputpair{
+    width: 50vw;
+}
+.Input{
+    font-size: 2.5vw;
+    padding: 1vw;
+}
+.err{
+    font-size: 2vw;
+}
+.InputPassword{
+    font-size: 2.5vw;
+}
+.InputPasswordSpan{
+    font-size: 2vw;
+}
+.InputLink{
+    font-size: 2vw;
+}
+.InputButton{
+    font-size: 2vw;
+    border-radius: 1vw;
+    padding: 0.6vw 3vw;
+    margin-top: 2vw;
+}
+.forgap{
+    gap: 2vw;
+ }
+ .buttonfontsize{
+    font-size: 2vw;
+}
+.fordisplay{
+    font-size: 2vw;
+}
+ }
+
+
+ .Toastify__toast--success {
+    /* background-color: black; */
+  }
+  
+  .Toastify__toast--error {
+    font-size: 1vw !important;
+  
+    /* background-color: black; */
+    
+  }
+
+ @media only screen and (max-width: 768px) {
+    .Toastify__toast--success {
+      display: flex !important;
+      align-items: center !important;
+      height: 5vw !important;
+      font-size: 2.5vw !important;
+      left: 15% !important;
+      top: 3vw !important;
+    }
+    .Toastify__toast--error {
+      display: flex !important;
+      align-items: center !important;
+      height: 5vw !important;
+      font-size: 2.5vw !important;
+      left: 15% !important;
+      top: 3vw !important;
+    }
+    .Toastify__toast {
+      --toastify-toast-min-height: 10vh;
+      width: 70% !important;
+    }
+  }
