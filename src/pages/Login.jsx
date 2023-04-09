@@ -7,6 +7,7 @@ import { config } from '../constants/Config'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Slide, Zoom, Flip, Bounce } from "react-toastify";
+import Loaderbtn from '../components/Loaderbtn';
 
 const Login = () => {
 
@@ -166,7 +167,9 @@ const Login = () => {
           type="submit"
           className="button InputButton"
         >
-          {buttonLoading ? "Login" : "Login"}
+          {buttonLoading ? 
+          <><Loaderbtn/></> 
+          : "Login"}
         </button>
 
         <div></div>

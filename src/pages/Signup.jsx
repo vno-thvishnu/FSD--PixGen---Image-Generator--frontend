@@ -6,6 +6,8 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Slide, Zoom, Flip, Bounce } from "react-toastify";
+import Loaderbtn from '../components/Loaderbtn';
+
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -258,7 +260,10 @@ const Signup = () => {
             type="submit"
             className="button InputButton"
           >
-            {buttonLoading ? "Create" : "Create"}
+            {buttonLoading ? 
+          <><Loaderbtn/></> 
+            
+            : "Create"}
           </button>
         </form>
       </div>
